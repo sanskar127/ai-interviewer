@@ -1,11 +1,13 @@
 const Home = () => {
   return (
     <main className="h-screen">
-      <div className="bg-gradient-to-r from-teal-400 via-green-500 to-emerald-600 section-container relative">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <div className="wave wave1 absolute bottom-0 left-0 h-5/6 bg-teal-400 w-full"></div>
-          <div className="wave wave2 absolute bottom-0 left-0 h-4/6 bg-green-500 w-full"></div>
-          <div className="wave wave3 absolute bottom-0 left-0 h-3/6 bg-emerald-600 w-full"></div>
+      <div className="relative -z-10">
+        <div className="bg-gradient-to-r from-teal-400 via-green-500 to-emerald-600 section-container relative">
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+            <div className="wave wave1 absolute bottom-0 left-0 h-5/6 bg-teal-400 w-full"></div>
+            <div className="wave wave2 absolute bottom-0 left-0 h-4/6 bg-green-500 w-full"></div>
+            <div className="wave wave3 absolute bottom-0 left-0 h-3/6 bg-emerald-600 w-full"></div>
+          </div>
         </div>
       </div>
 
