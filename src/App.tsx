@@ -1,13 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/page";
+import About from "./pages/About/page";
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
-    <main data-theme="light" className="h-screen">
-      <section className="bg-gradient-to-r from-teal-400 via-green-500 to-emerald-600 section-container">
-        <div className="wave wave1"></div>
-        <div className="wave wave2"></div>
-        <div className="wave wave3"></div>
-      </section>
-    </main>
-  )
-}
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
